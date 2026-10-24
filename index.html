@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на SHERINE</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Подключаем библиотеку салюта -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="card-container">
+        
+        <div class="anim-item delay-1">
+            <div class="top-badge glow-effect">«SHERINE»</div>
+            <h1 class="party-title glow-effect">Party</h1>
+        </div>
+        
+        <div class="welcome-text anim-item delay-2">
+            Дорогие гости!<br>
+            Приглашаем Вас на шерине, где будем рады разделить вместе с Вами прекрасное времяпрепровождение!
+        </div>
+
+        <div class="event-details anim-item delay-3">
+            <p class="date">7 ноября 2026 года</p>
+            <p class="time">Время: 12:00</p>
+            <p class="address">Адрес: г. Балыкчы, ул. Тоголок Молдо, 81</p>
+            
+            <a href="https://yandex.ru/maps/?text=кыргызстан+балыкчы+тоголок+молдо+81" target="_blank" class="map-btn">
+                Открыть на карте
+            </a>
+        </div>
+
+        <div class="names anim-item delay-4">
+            <span class="name glow-effect">Руслан</span>
+            <span class="and">&</span>
+            <span class="name glow-effect">Эльнура</span>
+        </div>
+
+        <div class="countdown-container anim-item delay-5">
+            <div class="time-block">
+                <span id="weeks" class="number">00</span>
+                <span class="label">недели</span>
+            </div>
+            <div class="time-block">
+                <span id="days" class="number">00</span>
+                <span class="label">день</span>
+            </div>
+            <div class="time-block">
+                <span id="hours" class="number">00</span>
+                <span class="label">часов</span>
+            </div>
+            <div class="time-block">
+                <span id="minutes" class="number">00</span>
+                <span class="label">минут</span>
+            </div>
+            <div class="time-block">
+                <span id="seconds" class="number">00</span>
+                <span class="label">секунд</span>
+            </div>
+        </div>
+
+        <div class="buttons-block anim-item delay-6">
+            <button class="rsvp-btn" id="celebrateBtn">Подтвердить присутствие</button>
+            
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=ETNO+SHERINE+Party&dates=20261107T060000Z/20261107T100000Z&details=Приглашение+на+шерине&location=г.+Балыкчы,+ул.+Тоголок+Молдо,+81" target="_blank" class="calendar-btn">
+                Добавить в календарь
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Важно: имя файла скрипта на английском -->
+    <script src="script.js"></script>
+</body>
+</html>

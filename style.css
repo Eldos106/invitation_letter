@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Убедись, что картинка фона называется именно фон.jpg */
+    background: url('https://avatars.mds.yandex.net/i?id=64b1d2f1bb77bbc4fd09f75bf3930d85beb877ee-5220281-images-thumbs&n=13') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+    overflow-x: hidden;
+}
+
+.card-container {
+    max-width: 440px;
+    width: 100%;
+    background: rgba(20, 12, 8, 0.82);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    position: relative;
+    z-index: 2;
+}
+
+.top-badge {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #e6ca87;
+    margin-bottom: 2px;
+}
+
+.party-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 46px;
+    color: #f3e5ab;
+    margin-bottom: 12px;
+}
+
+.glow-effect {
+    animation: goldGlow 3s infinite alternate;
+}
+
+@keyframes goldGlow {
+    0% {
+        text-shadow: 0 0 5px rgba(243, 229, 171, 0.2), 0 0 10px rgba(212, 175, 55, 0.2);
+    }
+    100% {
+        text-shadow: 0 0 15px rgba(243, 229, 171, 0.8), 0 0 25px rgba(212, 175, 55, 0.6);
+    }
+}
+
+.welcome-text {
+    font-size: 13px;
+    color: #f0e6d2;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.event-details {
+    font-size: 13px;
+    color: #dfd0b0;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.map-btn {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 6px 14px;
+    background: rgba(212, 175, 55, 0.15);
+    color: #f3e5ab;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 15px;
+    font-size: 11px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.map-btn:hover {
+    background: rgba(212, 175, 55, 0.3);
+    transform: scale(1.03);
+}
+
+.names {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    color: #f3e5ab;
+}
+
+.and {
+    font-family: 'Great Vibes', cursive;
+    font-size: 26px;
+    color: #d4af37;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: #f3e5ab;
+    font-weight: 600;
+}
+
+.label {
+    font-size: 9px;
+    color: #c5b38d;
+    margin-top: 3px;
+}
+
+.buttons-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.rsvp-btn {
+    padding: 12px 26px;
+    background: linear-gradient(135deg, #d4af37, #8b6b3e);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transition: all 0.3s ease;
+}
+
+.rsvp-btn:hover {
+    background: linear-gradient(135deg, #8b6b3e, #d4af37);
+    transform: scale(1.04);
+}
+
+.calendar-btn {
+    display: block;
+    padding: 10px 20px;
+    background: transparent;
+    color: #e6ca87;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 25px;
+    font-size: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.calendar-btn:hover {
+    background: rgba(212, 175, 55, 0.15);
+}
+
+.anim-item {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1.0s; }
+.delay-6 { animation-delay: 1.2s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        padding: 20px 14px;
+    }
+    .party-title {
+        font-size: 36px;
+    }
+    .welcome-text, .event-details {
+        font-size: 11.5px;
+    }
+    .name {
+        font-size: 32px;
+    }
+    .number {
+        font-size: 18px;
+    }
+}
