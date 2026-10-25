@@ -63,7 +63,7 @@ celebrateBtn.addEventListener('click', () => {
         }
     }());
 
-    celebrateBtn.innerText = "Ждем вас!";
+    celebrateBtn.innerText = "Сизди күтүп жатабыз!";
     celebrateBtn.style.background = "linear-gradient(135deg, #d4af37, #f3e5ab)";
     celebrateBtn.style.color = "#3a2512";
 });
